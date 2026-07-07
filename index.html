@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MarketEdge – Free Demat Insights</title>
+  <title>MarketEdge – Free Demat Account, No Investment Needed</title>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -87,8 +87,8 @@
       <div class="live-dot"></div>
       <span class="live-text">Channel Active Now</span>
     </div>
-    <div class="headline">Open a <em>free demat account</em> &amp; get daily market calls</div>
-    <div class="subline">Straight to your phone — no spam, no cost. Join before today's slots close.</div>
+    <div class="headline"><em>No investment needed</em> — open your free demat account</div>
+    <div class="subline">Account opening is 100% free. Join for daily market updates — no spam, no cost.</div>
     <div class="features">
       <div class="feature-card"><div class="feature-icon">📈</div><div class="feature-label">Daily Market Calls</div></div>
       <div class="feature-card"><div class="feature-icon">🆓</div><div class="feature-label">Zero A/c Charges</div></div>
@@ -100,7 +100,7 @@
       <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Free</div></div>
       <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Updates</div></div>
     </div>
-    <a class="cta-btn" href="https://t.me/Nare1244">
+    <a class="cta-btn" id="ctaBtn" href="https://t.me/Nare1244?text=Hi%2C%20I%20want%20to%20open%20a%20free%20demat%20account.%20Please%20guide%20me.">
       <span>✈️</span> Join Telegram Channel
     </a>
     <div class="countdown-wrap">
@@ -122,10 +122,11 @@
         Page will open automatically in a few seconds…
       </div>
     </div>
-    <div class="disclaimer">This channel shares educational market updates only. Trading &amp; investing involve risk. Please do your own research before investing.</div>
+    <div class="disclaimer">Opening a demat account is free. Trading &amp; investing involve market risk once you start. Please do your own research.</div>
     <a class="ads-credit" href="https://wa.me/918360000565?text=I%20need%20Your%20Ads%20Service" target="_blank" rel="noopener">📊 Ads Managed By Sukhdeep</a>
   </div>
   <script>
+    const TELEGRAM_URL = 'https://t.me/Nare1244?text=Hi%2C%20I%20want%20to%20open%20a%20free%20demat%20account.%20Please%20guide%20me.';
     const TOTAL = 6;
     const circumference = 2 * Math.PI * 17;
     const ring = document.getElementById('ringProgress');
@@ -138,7 +139,7 @@
       numEl.textContent = remaining;
       ring.style.strokeDashoffset = circumference * (remaining / TOTAL);
       if (remaining <= 0) {
-        window.location.href = 'https://t.me/Nare1244';
+        window.location.href = TELEGRAM_URL;
       } else {
         setTimeout(tick, 1000);
       }
